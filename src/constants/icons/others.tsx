@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export enum OthersIcons {
-  MENU = "MENU", // width="43" height="21" viewBox="0 0 43 21" fill="none">
+  MENU = 'MENU', // width="43" height="21" viewBox="0 0 43 21" fill="none">
 }
 
 export const othersIcons = {
@@ -15,4 +15,4 @@ export const othersIcons = {
       strokeLinejoin="round"
     />
   ),
-}
+};

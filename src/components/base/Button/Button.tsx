@@ -4,11 +4,12 @@ import s from './Button.module.scss';
 
 type PropsType = {
   children: ReactNode;
-}
+  onClick?: () => void;
+};
 
-const Button = ({children}: PropsType) => {
+const Button = ({ children, onClick }: PropsType) => {
   return (
-    <button className={s.Button}>
+    <button className={s.Button} onClick={onClick}>
       {children}
     </button>
   );

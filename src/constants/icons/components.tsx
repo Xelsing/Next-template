@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export enum ComponentsIcons {
-  POKER = "POKER", // width="74" height="21" viewBox="0 0 74 21" fill="none"
+  POKER = 'POKER', // width="74" height="21" viewBox="0 0 74 21" fill="none"
 }
 
 export const componentsIcons = {
@@ -31,4 +31,4 @@ export const componentsIcons = {
       />
     </>
   ),
-}
+};

@@ -1,9 +1,6 @@
-import React, { RefObject } from "react";
+import React, { RefObject } from 'react';
 
-export function useCloseByOutsideClick(
-  ref: RefObject<HTMLElement>,
-  fn: (event: Event) => void
-) {
+export function useCloseByOutsideClick(ref: RefObject<HTMLElement>, fn: (event: Event) => void) {
   // const ref = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
@@ -22,9 +19,9 @@ export function useCloseByOutsideClick(
       fn(event);
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [ref, fn]);
 }

@@ -1,15 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
-import { Button, Icon } from "@base/index";
-import { ALL_ICONS } from "@constants/icons";
+import Image from 'next/image';
+import styles from './page.module.scss';
+import { Button, Icon } from '@base/index';
+import { ALL_ICONS } from '@constants/icons';
 
 export default function Home() {
   return (
     <main className={styles.Home}>
       <div className={styles.Line}>
-        <p>
-          Get started by editing
-        </p>
+        <p>Get started by editing</p>
 
         <Image
           src="/next.svg"
@@ -24,24 +22,15 @@ export default function Home() {
       <div className={styles.center}>
         <div className={styles.DivRow}>
           button:
-          <Button>
-            test button
-          </Button>
+          <Button>test button</Button>
         </div>
         <div className={styles.DivRow}>
           icon:
-          <Icon
-            icon={ALL_ICONS.MENU}
-            viewBox={"0 0 43 21"}
-            className={styles.IconMenu}
-          />
+          <Icon icon={ALL_ICONS.MENU} viewBox={'0 0 43 21'} className={styles.IconMenu} />
         </div>
-
       </div>
 
-      <div className={styles.grid}>
-
-      </div>
+      <div className={styles.grid}></div>
     </main>
   );
 }

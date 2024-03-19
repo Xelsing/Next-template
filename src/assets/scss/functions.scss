@@ -1,6 +1,6 @@
-@use "sass:math";
+@use 'sass:math';
 
-@import "./variables.scss";
+@import './variables.scss';
 
 @function rem($size) {
   $remSize: math.div($size, $base-font-size);

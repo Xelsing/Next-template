@@ -1,6 +1,6 @@
 import React from 'react';
-import icons, { ALL_ICONS } from "@constants/icons";
-import clsx from "clsx";
+import icons, { ALL_ICONS } from '@constants/icons';
+import clsx from 'clsx';
 import s from './Icon.module.scss';
 
 type Props = {
@@ -8,18 +8,13 @@ type Props = {
   viewBox?: string;
   className?: string;
   onClick?: (e: React.SyntheticEvent) => void;
-}
+};
 
-const Icon: React.FC<Props> = ({
-  icon,
-  viewBox = "0 0 30 30",
-  className = "",
-  onClick,
-}) => (
+const Icon: React.FC<Props> = ({ icon, viewBox = '0 0 30 30', className = '', onClick }) => (
   <svg
     className={clsx({
       [s.Icon]: true,
-      [className]: !!className
+      [className]: !!className,
     })}
     viewBox={viewBox}
     onClick={onClick}
@@ -29,4 +24,3 @@ const Icon: React.FC<Props> = ({
 );
 
 export default Icon;
-
