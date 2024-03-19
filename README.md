@@ -1,4 +1,8 @@
-Next template with TS, sass(scss) add dep: clsx sass prettier
+Next template with TS, sass(scss) add dep: 
+clsx 
+sass
+prettier
+husky
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
