@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+@mixin onlymobile {
+  @media (min-width: 0px) and (max-width: calc($tablet-w - 1px)) {
+    @content;
+  }
+}
+
+@mixin iftablet {
+  @media (min-width: $tablet-w) {
+    @content;
+  }
+}
+
+@mixin iflaptop {
+  @media (min-width: $laptop-w) {
+    @content;
+  }
+}
+
+@mixin ifdesktop {
+  @media (min-width: $desktop-w) {
+    @content;
+  }
+}

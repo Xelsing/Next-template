@@ -1,0 +1,13 @@
+.Button {
+  @extend %button;
+  background-color: #212121;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: rem(20px);
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    border: 1px solid lightgrey;
+  }
+}

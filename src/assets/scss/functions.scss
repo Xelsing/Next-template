@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@import "./variables.scss";
+
+@function rem($size) {
+  $remSize: math.div($size, $base-font-size);
+  @return $remSize * 1rem;
+}
+
+@function zoom($value, $width) {
+  @return ($value / $width) * 100vw;
+}

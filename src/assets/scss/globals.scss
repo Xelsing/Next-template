@@ -1,0 +1,32 @@
+html {
+  @media only screen and (min-width: 0px) {
+    font-size: ($base-font-size / $design-mobile-width) * 100vw;
+  }
+
+  @include iftablet {
+    font-size: ($base-font-size / $design-tablet-width) * 100vw;
+  }
+
+  @include iflaptop {
+    font-size: ($base-font-size / $design-laptop-width) * 100vw;
+  }
+
+  @include ifdesktop {
+    font-size: ($base-font-size / $design-desktop-width) * 100vw;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: $font-Proxima;
+  overflow-x: hidden;
+  background-color: $color-default-background;
+  color: $color-primary;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
