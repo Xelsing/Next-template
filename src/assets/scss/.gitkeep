@@ -1,0 +1,8 @@
+1. core: - This file contains imports that affect the entire structure of the design. 
+2. extends: - This folder stores files related to extending the functionality of styles via @extend. 
+3. fonts: - This contains files related to fonts, for example, font connections. 
+4. functions: - This folder usually stores files with Sass custom functions to make working with style blocks easier. 
+5. global: - The global folder can contain general styles such as CSS normalization or styling of basic HTML elements. 
+6. mixin: - This folder usually stores files with various Sass mixins that make it easier to reuse code in project styles. 
+7. reset: - The reset folder usually contains files with CSS style reset (reset) to normalize the styles of elements in different browsers.
+8. variables: - The variables folder contains files that define the variables used in the project, such as colors, sizes, indents and other parameters. 
