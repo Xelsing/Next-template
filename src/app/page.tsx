@@ -1,6 +1,6 @@
-import Image from 'next/image';
+'use client';
 import styles from './page.module.scss';
-import { Button, Icon } from '@base/index';
+import { Button, Icon, Image } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
 
 export default function Home() {
