@@ -10,7 +10,7 @@ type Props = {
   onClick?: (e: React.SyntheticEvent) => void;
 };
 
-const Icon: React.FC<Props> = ({ icon, viewBox = '0 0 30 30', className = '', onClick }) => (
+const Icon = ({ icon, viewBox = '0 0 30 30', className = '', onClick }: Props) => (
   <svg
     className={clsx({
       [s.Icon]: true,
