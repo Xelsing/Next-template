@@ -1,0 +1,12 @@
+Helper functions are small,
+specialized functions that perform specific tasks,
+reducing code duplication and improving readability.
+They encapsulate reusable logic and adhere to
+DRY and KISS principles.
+
+Examples of helper function usage include:
+
+Formatting dates.
+Validating data.
+Manipulating arrays or objects.
+Performing mathematical computations.

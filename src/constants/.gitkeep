@@ -1,1 +1,7 @@
-svg, routing enums, other constants
+For constants
+
+Storing constants, SVGs, routing enums, and other constants
+in a dedicated directory improves
+organization, maintainability, and readability.
+It centralizes shared resources, making them easier to
+manage and use consistently throughout the project.
