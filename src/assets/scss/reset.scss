@@ -54,8 +54,7 @@ p {
   //margin-block-end: 0;
 }
 
-ul,
-ul li {
+ul[role='list'], ol[role='list']{
   list-style: none;
 }
 
@@ -97,4 +96,9 @@ button::-moz-focus-inner {
 
 legend {
   display: block;
+}
+
+img, picture, svg, video, canvas{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
