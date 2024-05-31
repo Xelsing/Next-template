@@ -10,8 +10,8 @@ export default function Home() {
         <p>Get started by editing</p>
 
         <Image
-          src="/next.svg"
-          alt="Next Logo"
+          src='/next.svg'
+          alt='Next Logo'
           className={styles.vercelLogo}
           width={100}
           height={24}
@@ -26,7 +26,11 @@ export default function Home() {
         </div>
         <div className={styles.DivRow}>
           icon:
-          <Icon icon={ALL_ICONS.MENU} viewBox={'0 0 43 21'} className={styles.IconMenu} />
+          <Icon
+            icon={ALL_ICONS.MENU}
+            viewBox={'0 0 43 21'}
+            className={styles.IconMenu}
+          />
         </div>
       </div>
 
