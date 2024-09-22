@@ -1,0 +1,41 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+
+  p {
+    font-family: $font-Montserrat;
+    font-size: rem(16px);
+  }
+
+  .VercelLogo {
+    filter: invert(1);
+    width: rem(192px);
+    height: rem(192px);
+  }
+
+  .center {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(40px);
+    padding: rem(20px);
+  }
+
+  .Line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .DivRow {
+    display: flex;
+    align-items: center;
+    gap: rem(20px);
+  }
+
+  .IconMenu {
+    width: rem(50px);
+    height: rem(50px);
+  }
+}
