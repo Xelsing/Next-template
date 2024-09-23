@@ -1,20 +1,26 @@
-## Next template
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-with: 
-- TS
-- clsx 
-- sass(scss)
-- prettier
-- husky
+# 🚀 Next.js Project Template
 
-Contain also 3 base components:
-- Button
-- Icon (with enum constants)
-- ImageWrapper (wrapper on Next Image)
+This is a **Next.js** project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-_Folders contain .gitkeep files for explain organizing the simplest architecture for a front-end application_
+### Features:
 
-## Getting Started
+- ⚡ **TypeScript**  
+- ✨ **[clsx](https://github.com/lukeed/clsx)** – utility for constructing `className` strings  
+- 🎨 **SASS (SCSS)** – for styling  
+- 🛠️ **Prettier** – code formatting  
+- 🐙 **Husky** – Git hooks
+
+### 📦 Contains Base Components:
+
+- **Button** – reusable button component  
+- **Icon** – component with `enum` constants for icons  
+- **ImageWrapper** – wrapper component for Next.js `Image`
+
+> The project also includes `.gitkeep` files in folders to provide guidance on the structure and organization for a simple front-end application.
+
+---
+
+## 🚀 Getting Started
 
 First, run the development server:
 
