@@ -60,7 +60,7 @@
       "error",
       {
         "ts-nocheck": true, // Запрещаем использование @ts-nocheck
-        "ts-ignore": false, // Разрешаем использование @ts-ignore
+        "ts-ignore": "warn", // Разрешаем использование @ts-ignore, но вызываем предупреждение
         "ts-expect-error": false // Разрешаем использование @ts-expect-error
       }
     ]
