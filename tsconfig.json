@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "Node",
@@ -19,6 +20,7 @@
       }
     ],
     "paths": {
+      "@public/*": ["./public/*"],
       "@styles/*": ["./src/assets/scss/*"],
       "@constants/*": ["./src/constants/*"],
       "@base/*": ["./src/components/base/*"],
