@@ -20,7 +20,6 @@
     "eslint:recommended", // Рекомендуемые правила ESLint (основные правила JavaScript)
     "plugin:@typescript-eslint/recommended", // Рекомендуемые правила для TypeScript
     "plugin:react/recommended", // Рекомендуемые правила для React
-    "plugin:jsx-a11y/recommended", // Рекомендуемые правила доступности для JSX
     "plugin:react-hooks/recommended", // Рекомендуемые правила для React-хуков
     "plugin:import/recommended", // Рекомендуемые правила для модулей импорта
     "next/core-web-vitals" // Рекомендуемые правила Next.js для улучшения производительности и качества (Core Web Vitals)
@@ -37,9 +36,6 @@
     // Правила для хуков
     "react-hooks/rules-of-hooks": "error", // Ошибка при неправильном использовании хуков (например, хуки должны вызываться только в функциях)
     "react-hooks/exhaustive-deps": "warn", // Предупреждение при неправильной настройке зависимостей в хуках useEffect
-
-    // Настройка доступности (a11y)
-    "jsx-a11y/anchor-is-valid": "off", // Отключаем правило проверки валидности ссылок. В Next.js используется компонент Link, который автоматически обрабатывает ссылки
 
     // Настройка импорта
     "import/order": [
