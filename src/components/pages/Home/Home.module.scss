@@ -1,7 +1,7 @@
 .Home {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: calc(2wv - #{rem(1px)});
 
   p {
     font-family: $font-Montserrat;
