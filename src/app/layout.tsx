@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 
 export async function generateMetadata() {
-  const url = process.env.NEXT_PUBLIC_SITE_URL ? process.env.NEXT_PUBLIC_SITE_URL : 'http://localhost:3000';
+  const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
   return {
     title: {
