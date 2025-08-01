@@ -17,7 +17,7 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: [path.resolve('./src/assets/scss')],
-    prependData: `@import "core.scss";`,
+    prependData: `@use "core.scss" as *;`,
   },
 };
 
