@@ -14,11 +14,15 @@
     height: rem(192px);
   }
 
-  .center {
+  .Center {
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(40px);
     padding: rem(20px);
+
+    @include ifdesktop {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .Line {
@@ -37,5 +41,18 @@
   .IconMenu {
     width: rem(50px);
     height: rem(50px);
+  }
+
+  .Wrapper {
+    border: rem(1px) solid white;
+    padding: rem(30px);
+  }
+
+  .List {
+    padding: 0 rem(5px);
+  }
+
+  .Item {
+    padding: rem(8px) rem(12px);
   }
 }

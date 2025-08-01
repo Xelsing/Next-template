@@ -14,22 +14,37 @@ const Home = () => {
         <Image style={{ filter: 'invert(1)' }} src='/next.svg' alt='Next Logo' width={100} height={24} priority />
       </section>
 
-      <section className={s.center}>
-        <div className={s.DivRow}>
-          <p>button:</p>
-          <Button>test button</Button>
+      <section className={s.Center}>
+        <div>
+          <div className={s.DivRow}>
+            <p>button:</p>
+            <Button>test button</Button>
 
-          <p>icon:</p>
-          <Icon icon={ALL_ICONS.MENU} viewBox={'0 0 43 21'} className={s.IconMenu} />
+            <p>icon:</p>
+            <Icon icon={ALL_ICONS.MENU} viewBox={'0 0 43 21'} className={s.IconMenu} />
+          </div>
+
+          <div className={s.DivRow}>
+            <div className={s.Wrapper}>
+              <ul>
+                <p>list without className</p>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div className={s.DivRow}>
-          <p>static image use:</p>
-          <Image src='/nextjs-192x192.png' alt='Next Logo' width={192} height={192} priority />
-        </div>
-        <div className={s.DivRow}>
-          <p>dynamical image use:</p>
-          <ImageWrapper src='/nextjs-192x192.png' alt='Next Logo' className={s.VercelLogo} fill priority />
+        <div>
+          <div className={s.DivRow}>
+            <p>static image use:</p>
+            <Image src='/nextjs-192x192.png' alt='Next Logo' width={192} height={192} priority />
+          </div>
+          <div className={s.DivRow}>
+            <p>dynamical image use:</p>
+            <ImageWrapper src='/nextjs-192x192.png' alt='Next Logo' className={s.VercelLogo} fill priority />
+          </div>
         </div>
       </section>
     </main>
