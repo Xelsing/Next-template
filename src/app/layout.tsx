@@ -1,4 +1,4 @@
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Inter } from 'next/font/google';
 
 import { Footer, Header } from '@common/index';
 
@@ -8,6 +8,12 @@ import '@styles/globals.scss';
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-Montserrat',
+  weight: 'variable',
+  preload: true,
+});
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-Inter',
   weight: 'variable',
   preload: true,
 });
@@ -47,7 +53,7 @@ export async function generateMetadata() {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang='en'>
-      <body className={montserrat.variable}>
+      <body className={`${montserrat.variable} ${inter.variable}`}>
         <Header />
         {children}
         <Footer />

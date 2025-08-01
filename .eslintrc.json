@@ -86,6 +86,12 @@
       "rules": {
         "import/no-unresolved": "off" // Отключаем правило проверки на неразрешённые модули для SCSS, так как CSS и SCSS модули не всегда распознаются ESLint корректно
       }
+    },
+    {
+      "files": ["*.js"],
+      "parserOptions": {
+        "project": null // отключает типизированный ESLint
+      }
     }
   ]
 }

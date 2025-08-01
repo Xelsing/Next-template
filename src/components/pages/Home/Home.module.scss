@@ -1,24 +1,58 @@
 .Home {
   display: flex;
   flex-direction: column;
-  padding: calc(2wv - #{rem(1px)});
+  padding: calc(2wv - #{1px});
 
   p {
-    font-family: $font-Montserrat;
-    font-size: rem(16px);
+    font-family: $font-Inter;
+    font-size: 16px;
+  }
+
+  .TextImage {
+    font-size: 10px;
+
+    @include iftablet {
+      font-size: 16px;
+    }
+    @include iflaptop {
+      font-size: 24px;
+    }
+    @include ifdesktop {
+      font-size: 32px;
+    }
   }
 
   .VercelLogo {
-    filter: invert(1);
-    width: rem(192px);
-    height: rem(192px);
+    width: 128px;
+    height: 128px;
+
+    @include iftablet {
+      width: 192px;
+      height: 192px;
+    }
+    @include iflaptop {
+      width: 256px;
+      height: 256px;
+    }
+    @include ifdesktop {
+      width: 320px;
+      height: 320px;
+    }
+
+    &_rel {
+      position: relative;
+    }
+
+    &_alt {
+      filter: invert(1);
+    }
   }
 
   .Center {
     display: grid;
     grid-template-columns: 1fr;
-    gap: rem(40px);
-    padding: rem(20px);
+    gap: 40px;
+    padding: 20px;
 
     @include ifdesktop {
       grid-template-columns: 1fr 1fr;
@@ -35,24 +69,24 @@
   .DivRow {
     display: flex;
     align-items: center;
-    gap: rem(20px);
+    gap: 20px;
   }
 
   .IconMenu {
-    width: rem(50px);
-    height: rem(50px);
+    width: 50px;
+    height: 50px;
   }
 
   .Wrapper {
-    border: rem(1px) solid white;
-    padding: rem(30px);
+    border: 1px solid white;
+    padding: 30px;
   }
 
   .List {
-    padding: 0 rem(5px);
+    padding: 0 5px;
   }
 
   .Item {
-    padding: rem(8px) rem(12px);
+    padding: 8px 12px;
   }
 }

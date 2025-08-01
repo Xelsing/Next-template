@@ -1,4 +1,4 @@
-$base-font-size: 14px;
+$base-font-size: 16px; // 1rem = 16px ЗНАЧЕНИЕ ДУБЛИРОВАНО И ТАК ЖЕ ЕСТЬ В postcss.config.js !!!!
 
 //design breakpoint
 $design-mobile-width: 360px;
@@ -17,3 +17,4 @@ $color-primary: #ffffff;
 
 $font-main: 'Proxima Nova', sans-serif;
 $font-Montserrat: var(--font-Montserrat), sans-serif;
+$font-Inter: var(--font-Inter), sans-serif;

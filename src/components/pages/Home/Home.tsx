@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import clsx from 'clsx';
 
 import { Button, Icon, ImageWrapper } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
@@ -38,12 +39,20 @@ const Home = () => {
 
         <div>
           <div className={s.DivRow}>
-            <p>static image use:</p>
-            <Image src='/nextjs-192x192.png' alt='Next Logo' width={192} height={192} priority />
+            <p className={s.TextImage}>static image use:</p>
+            <div className={clsx(s.VercelLogo, s.VercelLogo_rel)}>
+              <Image src='/nextjs-192x192.png' alt='Next Logo' fill priority />
+            </div>
           </div>
           <div className={s.DivRow}>
-            <p>dynamical image use:</p>
-            <ImageWrapper src='/nextjs-192x192.png' alt='Next Logo' className={s.VercelLogo} fill priority />
+            <p className={s.TextImage}>dynamical image use:</p>
+            <ImageWrapper
+              src='/nextjs-192x192.png'
+              alt='Next Logo'
+              className={clsx(s.VercelLogo, s.VercelLogo_alt)}
+              fill
+              priority
+            />
           </div>
         </div>
       </section>
