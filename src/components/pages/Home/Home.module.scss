@@ -8,6 +8,43 @@
     font-size: 16px;
   }
 
+  .MarginTop {
+    margin-top: 40px;
+  }
+
+  .TestCaseWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .TestCaseOnlyPX {
+    border: 1px solid red;
+    width: fit-content;
+  }
+
+  .TestCaseToRem {
+    border: 1px solid green;
+    width: fit-content;
+  }
+
+  .AnotherClassTest {
+    padding: 5px 15px;
+  }
+
+  .BoxShadow {
+    width: fit-content;
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+  .BoxShadowOne {
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.8);
+  }
+  .BoxShadowTwo {
+    box-shadow: 0 6px 24px rgba(255, 255, 255, 0.3);;
+  }
+
   .TextImage {
     font-size: 10px;
 
@@ -72,6 +109,14 @@
     gap: 20px;
   }
 
+  .DivGap {
+    gap: 20px;
+
+    @include ifdesktop {
+      gap: 40px;
+    }
+  }
+
   .IconMenu {
     width: 50px;
     height: 50px;
@@ -79,7 +124,7 @@
 
   .Wrapper {
     border: 1px solid white;
-    padding: 30px;
+    padding: 0 20px;
   }
 
   .List {
