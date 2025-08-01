@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prettier": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format:all": "prettier --write . && eslint --fix . && stylelint \"**/*.{css,scss}\" --fix"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -32,6 +33,9 @@
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
+    "stylelint": "^16.23.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1",
     "typescript": "^5"
   }
 }

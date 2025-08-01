@@ -1,0 +1,5 @@
+node_modules/
+.next/
+dist/
+*.min.css
+src/assets/
