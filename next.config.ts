@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
 import path from 'path';
 
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   images: {
     formats: ['image/webp'],
     remotePatterns: [

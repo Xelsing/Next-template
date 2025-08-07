@@ -5,12 +5,13 @@ import s from './Header.module.scss';
 const Header = () => {
   return (
     <header className={s.Header}>
-      <h1>header</h1>
-      <h1>header</h1>
-      <h1>header</h1>
-      <h1>header</h1>
-      <h1>header</h1>
-      <h1>header</h1>
+      {Array.from({ length: 5 }, (i) => (
+        <div key={Math.random()}>
+          <p>
+            <span style={{ color: 'magenta' }}> atom </span> version next-template
+          </p>
+        </div>
+      ))}
     </header>
   );
 };
